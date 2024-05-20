@@ -1,0 +1,3 @@
+<app-empleados [mensaje]="'Revisar las actividades para hoy!'"></app-empleados>
+<app-empleados (mensajeEmitido)="recibirMensaje($event)"></app-empleados>
+<p>Mensaje recibido de los empleados: {{ mensajeRecibido }}</p>
