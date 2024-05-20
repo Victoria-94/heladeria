@@ -1,3 +1,10 @@
-<app-empleados [mensaje]="'Revisar las actividades para hoy!'"></app-empleados>
-<app-empleados (mensajeEmitido)="recibirMensaje($event)"></app-empleados>
-<p>Mensaje recibido de los empleados: {{ mensajeRecibido }}</p>
+<div>
+    <h2>Componente Jefe</h2>
+    <app-empleados
+      [mensaje]='mensajefromjefe'
+      (mensajeEmitido)="recibirdesdeEmpleado($event)"
+    ></app-empleados>
+    <p>Recibido desde  Empleado: {{ mensajefromempleado }}
+    </p>
+</div>
+  
