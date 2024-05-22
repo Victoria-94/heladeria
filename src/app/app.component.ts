@@ -12,4 +12,13 @@ import { EmpleadosComponent } from './empleados/empleados.component';
 })
 export class AppComponent {
   title = 'heladeria';
+  
+  message: string='';
+  onEventLaunched() {
+    // Aquí iría lo que el padre tenga que hacer
+    this.message='hola hola';
+  }
+  receiveMessage(event: string) {
+    this.message = event;
+  }
 }

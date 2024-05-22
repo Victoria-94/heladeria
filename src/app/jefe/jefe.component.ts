@@ -8,12 +8,8 @@ import { EmpleadosComponent } from '../empleados/empleados.component';
   templateUrl: './jefe.component.html',
   styleUrl: './jefe.component.css'
 })
+
 export class JefeComponent {
-  mensajefromjefe: string = 'Hola estas son las Tareas para hoy:';
-  mensajefromempleado: string='Esperando';
-  recibirdesdeEmpleado(sms:string){
-    console.log('recibiendo..');
-    this.mensajefromempleado=sms ;
-  }
+  
 
 }

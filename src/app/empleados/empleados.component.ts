@@ -8,11 +8,15 @@ import { Component, Input, EventEmitter, Output } from '@angular/core';
   styleUrl: './empleados.component.css'
 })
 export class EmpleadosComponent {
-  @Input() mensaje: string='';
+  message: string = "Hola Mundo!";
+  @Input() mensaje: string='hola';
   @Output() mensajeEmitido= new EventEmitter<string>();
+  //console.log('emitiendo..');
+
   emitirMensaje(){
-    console.log('enitiendo..');
-    this.mensajeEmitido.emit('Tarea recibida');
+    console.log('emitiendo..');
+    //this.mensajeEmitido.emit('Tarea recibida');
+    this.mensajeEmitido.emit(this.message);
   }
 
 }

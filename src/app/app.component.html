@@ -10,7 +10,18 @@
   
 </head>
 <body>
-  <app-empleados></app-empleados>
+
+  <div>
+    <h2>Componente Jefe</h2>
+    <app-empleados
+     
+      (mensajeEmitido)="receiveMessage($event)"
+    ></app-empleados>
+    <p>Recibido desde  Empleado: {{ message }}
+    </p>
+     
+
+</div>
  
 </body>
 </html>
